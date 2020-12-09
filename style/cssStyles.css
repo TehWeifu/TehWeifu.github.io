@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#container {
+    z-index: 1;
+}
+
+#clear {
+    clear: both;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    outline-style: none;
+}
+
+h1 {
+    position: absolute;
+    letter-spacing: 10px;
+    top: 10%;
+    left: 42.5%;
+    display: inline;
+    text-align: center;
+    border-bottom: 2px solid #FF7F27;
+    font-size: 3em;
+    font-weight: lighter;
+    color: white;
+}
+
+
+/* Estilos del menu de la cabecera */
+#header {
+    width: 100%;
+    height: 12%;
+    min-height: 50px;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    border-bottom: 1px solid #FF7F27;
+}
+
+#header img {
+    float: right;
+    width: 10%;
+    height: auto;
+    margin-right: 5%;
+    margin-top: 0.3%;
+}
+
+#menuPrincipal {
+    list-style: none;
+    padding-left: 10%;
+}
+
+#menuPrincipal a {
+    text-decoration: none;
+    color: #FF7F27;
+    float: left;
+    margin: 2.7% 1%;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 5px;
+}
+
+#menuPrincipal a:hover {
+    border-bottom: 2px solid #FF7F27;
+}
+
+#menuPrincipal a:active {
+    font-weight: 500;
+}
+
+#languages {
+    width: 5%;
+    height: 50%;
+    float: right;
+    vertical-align: middle;
+    margin: 1% 5%;
+}
+
+#languages .flag{
+    margin: 5%;
+    margin-top: 10%;
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+#triangleD {
+    font-size: 0.8em;
+}
+
+#header #menuPrincipal #contact {
+    margin-left: 8%;
+}
+
+#menuHead {
+    position: absolute;
+    display: inline-block;
+    color: #FF7F27;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-size: larger;
+    margin: 2.4% 1%;
+  }
+  
+  #menuCont {
+    display: none;
+    height: 60px;
+    position: absolute;
+    top: 22px;
+    left: -31px;
+    background-color: grey;
+    border: 2px white solid;
+    border-radius: 5px;
+    font-size: 0.7em;
+    min-width: 100px;
+    padding: 12px 16px;
+    z-index: 6;
+  }
+  
+  #menuHead:hover #menuCont {
+    display: block;
+  }
+
+  #menuHead #menuCont #hobbies {
+      position: absolute;
+      top: 45px;
+      left: 15px;
+  }
+/* Estilos del menu de la cabecera */
+
+
+/* Estilos de la presentacion */
+#presentacion {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    z-index: 2;
+    background-color: grey;
+}
+
+#presentacion h1 {
+    position: absolute;
+    width: 410px;
+    top: 40%;
+    left: 15%;
+    border: none;
+    text-align: left;
+    letter-spacing: 0;
+    font-size: 2em;
+}
+
+#presentacion #nombre {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+#presentacion img {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    width: 30.5%;
+    height: auto;
+}
+
+#presentacion h2 {
+    display: inline;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    color: white;
+    font-size: 2em;
+    font-weight: normal;
+}
+/* Estilos de la presentacion */
+
+
+
+/* Estilos del boton para volver al inicio */
+#return {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: url(../img/upArrOra.png) no-repeat grey;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px white solid;
+    z-index: 20;
+}
+
+#return:hover {
+    background: url(../img/upArrBlack.png) no-repeat #FF7F27;
+    background-position: center;
+}
+/* Estilos del boton para volver al inicio */
+
+
+
+/* Estilos del fondo de la pagina */
+#backgroud {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+    background: url(../img/vlc.jpg) no-repeat;
+}
+/* Estilos del fondo de la pagina */
+
+.blankSpace {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+
+/* Estilos del apartado de contacto */
+#contacto {
+    background-color: grey;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+}
+
+#contacto h2 {
+    position: absolute;
+    color: white;
+}
+
+#contacto h2#hform {
+    top: 30%;
+    left: 10%;
+}
+
+#contacto h2#hdata {
+    top: 30%;
+    left: 55%;
+}
+
+
+#contacto #contactoForm {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 35%;
+    height: 60%;
+}
+
+#contacto #contactoForm input,
+#contacto #contactoForm textarea {
+    width: 100%;
+    height: 45px;
+    margin: 2% 0;
+    padding: 1% 0 1% 2%;    
+    border: solid 1px #FF7F27
+}
+
+#contacto #contactoForm input#subBut {
+    background-color: #FF7F27;    
+    color: white;
+    letter-spacing: 2px;
+    width: 135px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid lightgrey 2px;
+    padding-left: 1%;
+    font-size: 1.2em;
+}
+
+#contacto #contactoForm input#subBut:hover {
+    border: 2px white solid;
+}
+
+#contacto #contactoForm input#subBut:active {
+    border: solid 2px #FF7F27;
+    color: #FF7F27;
+    background-color: white;
+}
+
+#contacto #contactoForm textarea {
+    height: 140px;
+}
+
+
+#contacto #contactoForm input:focus,
+#contacto #contactoForm textarea:focus {
+    border: 2px #FF7F27 solid;
+}
+
+#contacto #contactoData {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+#contacto #contactoData ul{
+    list-style: none;
+}
+
+#contacto #contactoData li.listaPrin{
+    margin-bottom: 10%;
+    margin-left: 15%;
+}
+
+#contacto #contactoData li.listaPrin li{
+    margin-top: 2%;
+}
+
+#addPic, #phoPic, #emailPic {
+    position: absolute;
+    left: 54.5%;
+}
+
+#addPic {
+    top: 33%;
+}
+
+#phoPic {
+    top: 51%;
+}
+
+#emailPic {
+    top: 67%;
+    left: 54%;
+}
+/* Estilos del apartado de contacto */
+
+
+
+/* Estilos del apartado foot */
+#foot {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    z-index: 2;
+    background-color: #FF7F27;
+}
+
+#foot img {
+    position: absolute;
+    top: 25%;
+    width: 50px;
+    height: auto;
+}
+
+#foot img#fbL {
+    left: 40%;
+}
+
+#foot img#igL {
+    left: 44.5%;
+    width: 55px;
+}
+
+#foot img#twL {
+    left: 49.5%;
+    width: 80px;
+    top: 27%;
+}
+
+#foot img#ghL {
+    left: 55%;
+}
+
+#foot p {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 65%;
+}
+
+#foot h4 {
+    display: inline;
+    position: relative;
+    color: white;
+    border: 1px white solid;
+    top: 75%;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    left: 48%;
+    padding: 5px;
+}
+/* Estilos del apartado foot */
+
+
+
+/* Estilos del apartado aboutMe */
+#aboutMe {
+    overflow: hidden;
+    position: relative;
+    background-color: grey;
+    width: 100%;
+    min-width: 100px;
+    height: 53%;
+    min-height: 500px;
+    z-index: 3;
+}
+
+#aboutMe #description,
+#aboutMe #coding,
+#aboutMe #languages {
+    position: absolute;
+    color: white;
+    width: 25%;
+    top: 30%;
+    left: 10%;
+    text-align: justify;
+    line-height: 20px;
+    height: 500px;
+}
+
+#aboutMe h2{
+    margin-bottom: 15px;
+}
+
+#aboutMe p {
+    font-size: 1.2em;
+    font: lighter;
+    letter-spacing: 1px;
+}
+
+#aboutMe button {
+    position: relative;
+    left: 150px;
+    top: 15px;
+    background-color: #FF7F27;
+    color: white;
+    width: 185px;
+    height: 55px;
+    border-radius: 32px;
+    border: lightgrey 2px solid;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+#aboutMe button:hover {
+    border: white 2px solid;
+}
+
+#aboutMe button:active {
+    border: #FF7F27 2px solid;
+    background-color: white;
+    color: #FF7F27;
+}
+
+#aboutMe #coding {
+    left: 40%;
+}
+
+#aboutMe #languages {
+    top: 26.5%;
+    left: 65%;
+}
+
+.progress .percent {
+    float: right;
+}
+
+.progress .backgroud {
+    position: relative;
+    top: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.progress .backgroud .bar {
+    background-color: #FF7F27;
+    border-radius: 32px;
+    height: 15px;
+}
+
+.progress .backgroud #ninety1,
+.progress .backgroud #ninety2 {
+    width: 90%;
+}
+
+
+.progress .backgroud #eighty {
+    width: 80%;
+}
+
+.progress .backgroud #fifty {
+    width: 50%;
+}
+
+.progress .backgroud #thirty1,
+.progress .backgroud #thirty2,
+.progress .backgroud #thirty3 {
+    width: 30%;
+}
+
+.progress .backgroud #twenty {
+    width: 20%;
+}
+
+#coding #phy,
+#languages #val {
+    position: relative;
+    top: 25px;
+}
+
+#coding #html,
+#languages #eng {
+    position: relative;
+    top: 50px;
+}
+
+#coding #css,
+#languages #ger {
+    position: relative;
+    top: 75px;
+}
+
+#coding #js,
+#languages #fre {
+    position: relative;
+    top: 100px;
+}
+/* Estilos del apartado aboutMe */
+
+/* Estilos del apartado projectos */
+#projects {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    color: grey;
+    height: 800px;
+}
+
+#projects h1 {
+    color: black;
+}
+
+#projects label {
+    position: absolute;
+    top: 170px;
+    left: 350px;
+    background-color: #FF7F27;    
+    color: white;
+    width: 230px;
+    text-align: right;
+    font-size: 1.2em;
+    padding: 15px 25px 15px 40px;
+}
+
+#projects label#comb {
+    top: 450px;
+}
+
+#projects label#disc,
+#projects label#more {
+    left: 1200px;
+    top: 320px;
+    text-align: left;
+    padding: 15px 40px 15px 25px;
+}
+
+#projects label#more {
+    top: 620px;
+}
+
+#projects label .lanProject {
+    display: block;
+    margin: 10px 0 0 0;
+    color: lightgrey;
+}
+
+#projects p {
+    position: absolute;
+    display: inline;
+    color: black;
+    text-align: justify;
+    width: 760px;
+    font-size: 1.2em;
+    top: 170px;
+    left: 660px;
+    padding-left: 80px;
+    border-left: 4px solid #FF7F27;
+    height: 85px;
+    letter-spacing: 1px;
+}
+
+#projects #combP {
+    top: 450px;
+}
+
+#projects #discP,
+#projects #moreP {
+    left: 270px;
+    top: 320px;
+    padding-left: none;
+    border-left: none;
+    border-right: 4px solid #FF7F27;
+    padding-right: 75px;
+}
+
+#projects #moreP {
+    top: 620px;
+}
+
+#projects a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #FF7F27;
+}
+
+#projects a:visited {
+    text-decoration: none;
+    color: black;
+}
+/* Estilos del apartado projectos */
+
+/* Estilos del apartado hobbies */
+
+#hobby {
+    position: relative;
+    background-color: black;
+    z-index: 2;
+    height: 600px;
+    color: white;
+}
+
+#hobby div {
+    position: absolute;
+    top: 30%;
+    float: left;
+    height: 50%;
+    width: 25%;
+    background-color: #FF7F27;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+#hobby div#read {
+    left: 7.5%;
+}
+
+#hobby div#cook {
+    left: 37.5%;
+}
+
+#hobby div#sport {
+    left: 67.5%;
+}
+
+#hobby div#read img,
+#hobby div#cook img,
+#hobby div#sport img {    
+    position: absolute;
+    width: 50px;
+    height: auto;
+    margin: 5% 0% 0% 43%;
+}
+
+#hobby div#sport img { 
+    width: 65px;
+    margin-top: 3%;
+}
+
+#hobby div#read p,
+#hobby div#cook p,
+#hobby div#sport p {
+    text-align: justify;
+        margin: 20% 5%;
+}
+/* Estilos del apartado hobbies */
+
+
+#contactoLink {
+    position: absolute;
+    bottom: 25%;
+}
+
+#projectsLink {
+    position: absolute;
+    top: 70%;
+}
+
+#hobbiesLink {
+    position: absolute;
+    top: 335%;
+}
+
+#emptybot {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: grey;
+    z-index: 2;
+}

@@ -635,7 +635,7 @@ h1 {
 
 #hobby {
     position: relative;
-    background-color: black;
+    background-color: transparent;
     z-index: 2;
     height: 600px;
     color: white;

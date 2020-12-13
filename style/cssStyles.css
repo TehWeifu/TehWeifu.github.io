@@ -169,7 +169,7 @@ h1 {
 
 #presentacion #nombre {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 5vw;
 }
 
 #presentacion img {
@@ -239,32 +239,20 @@ h1 {
     background-color: grey;
     position: relative;
     width: 100%;
-    height: 80%;
+    height: auto;
     z-index: 2;
+    overflow: hidden;
 }
 
 #contacto h2 {
-    position: absolute;
     color: white;
 }
 
-#contacto h2#hform {
-    top: 30%;
-    left: 10%;
-}
-
-#contacto h2#hdata {
-    top: 30%;
-    left: 55%;
-}
-
-
 #contacto #contactoForm {
-    position: absolute;
-    top: 35%;
-    left: 10%;
+    float: left;
     width: 35%;
     height: 60%;
+    margin: 5% 5% 5% 15%;
 }
 
 #contacto #contactoForm input,
@@ -309,12 +297,12 @@ h1 {
 }
 
 #contacto #contactoData {
-    position: absolute;
-    top: 35%;
-    left: 55%;
+    float: left;
     color: white;
     font-size: 1.2em;
     letter-spacing: 1px;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 #contacto #contactoData ul{
@@ -322,30 +310,39 @@ h1 {
 }
 
 #contacto #contactoData li.listaPrin{
+    margin-top: 5%;
     margin-bottom: 10%;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 
 #contacto #contactoData li.listaPrin li{
     margin-top: 2%;
+    margin-left: 20%;
 }
+
 
 #addPic, #phoPic, #emailPic {
-    position: absolute;
-    left: 54.5%;
+    float: left;
+    margin-right: 2%;
 }
 
-#addPic {
-    top: 33%;
+@media screen and (max-width: 1250px) {
+    #contacto #contactoForm {
+        width: 75%;
+    }
 }
 
-#phoPic {
-    top: 51%;
+@media screen and (max-width: 1250px) {
+    #contacto #contactoData {
+        margin: -5% 0% 0% 0%;
+        font-size: 1.1em;
+    }
 }
 
-#emailPic {
-    top: 67%;
-    left: 54%;
+@media screen and (max-width: 1250px) {
+    #contacto #contactoData #hData{
+        margin-left: 5%; 
+    }
 }
 /* Estilos del apartado de contacto */
 
@@ -355,54 +352,66 @@ h1 {
 #foot {
     position: relative;
     width: 100%;
-    height: 25%;
+    overflow: hidden;
+    height: 250px;
     z-index: 2;
     background-color: #FF7F27;
 }
 
+#foot #socialDiv {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+#foot #socialDiv #socialCont{
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+
 #foot img {
-    position: absolute;
-    top: 25%;
+    margin: 0% 5% 0% 0%;
+    float: left;
     width: 50px;
     height: auto;
 }
 
-#foot img#fbL {
-    left: 40%;
+#foot img#ghL {
+    margin: 0%;
 }
 
 #foot img#igL {
-    left: 44.5%;
     width: 55px;
+    margin: 0% 9% 0% 0%;
 }
 
 #foot img#twL {
-    left: 49.5%;
     width: 80px;
-    top: 27%;
-}
-
-#foot img#ghL {
-    left: 55%;
+    margin-top: 4px;
 }
 
 #foot p {
     position: relative;
     text-align: center;
     color: white;
-    top: 65%;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 #foot h4 {
     display: inline;
     position: relative;
-    color: white;
+    color: #FF7F27;
     border: 1px white solid;
-    top: 75%;
     font-weight: lighter;
     letter-spacing: 2px;
     left: 48%;
     padding: 5px;
+}
+
+#foot h4:hover {
+    color: white;
 }
 /* Estilos del apartado foot */
 

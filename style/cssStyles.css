@@ -3,6 +3,11 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    /* Estas dos lineas arreglan el "bug" que hacen desaparecer los divs
+    cuando hago hover sobre un elemento */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    max-width: 1920px;
 }
 
 #container {
@@ -429,12 +434,13 @@ h1 {
     background-position: center;
     border-radius: 50%;
     border: 3px white solid;
-    z-index: 20;
+    z-index: 2;
 }
 
 #return:hover {
     background: url(../img/upArrBlack.png) no-repeat #FF7F27;
     background-position: center;
+    z-index: 2;
 }
 /* Estilos del boton para volver al inicio */
 

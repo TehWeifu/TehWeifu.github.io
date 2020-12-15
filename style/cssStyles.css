@@ -212,13 +212,13 @@ h1 {
 @media screen and (max-width: 500px) {
     #header {
         overflow: visible;
-        height: 250px;
+        height: 130px;
     }
 }
 
 @media screen and (max-width: 500px) {
     #presentacion {
-        margin-top: 140px !important;
+        margin-top: 10px !important;
         margin-bottom: 80px;
     }
 }
@@ -226,14 +226,26 @@ h1 {
 @media screen and (max-width: 500px) {
     #header img#mainLogo {
         position: absolute;
-        bottom: 30px;
-        right: 10px;
+        top: 10px;
+        right: -20px;
         clear: both;
         margin: 0;
         padding: 0;
         margin-right: 40px;
+        height: auto;
+        width: 60px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #header #languages {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        width: 200px;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
     #menuPrincipal {
@@ -248,30 +260,34 @@ h1 {
 @media screen and (max-width: 500px) {
     #menuPrincipal li a{
         position: absolute;
-        left: 0px;
-        top: -20px;
+        left: -35px;
+        top: 0px;
+        font-size: 0.85em;
     }
 }
 @media screen and (max-width: 500px) {
     #menuPrincipal li#queryTwo a {
         position: absolute;
-        top: 20px;
-        left: -130px;
+        top: 0px;
+        left: -100px;
+        width: 100px;
     }
 }
 
 @media screen and (max-width: 500px) {
     #menuPrincipal li#queryThree a {
         position: absolute;
-        top: 10px;
+        top: -70px;
+        left: 140px;
+        width: 70px;
     }
 }
 
 @media screen and (max-width: 500px) {
     #menuPrincipal li#queryFour a {
         position: absolute;
-        top: 60px;
-        left: -130px;
+        top: -70px;
+        left: 85px;
     }
 }
 
@@ -291,14 +307,18 @@ h1 {
 
 @media screen and (max-width: 500px) {
     #menuCont {
-        top: 100px;
-        left: -250px;
+        top: 0px;
+        left: -125px;
+        font-size: 0.7em;
     }
 }
 
 @media screen and (max-width: 500px) {
-    #menuCont a.projectsLink {
+    #header #menuHead #menuCont a.projectsLink {
+        position: absolute;
+        top: 10px;
         left: 15px;
+        width: 100px;
     }
 }
 
@@ -682,8 +702,9 @@ h1 {
 
 #aboutMe button {
     position: relative;
-    left: 30%;
-    top: 45px;
+    /* left: 30%;
+    top: 45px; */
+    margin: 20px 25%;
     background-color: #FF7F27;
     color: white;
     width: 185px;
@@ -784,6 +805,8 @@ h1 {
     #aboutContDiv {
         display: block;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1043,17 +1066,17 @@ h1 {
 
 #contactoLink {
     position: absolute;
-    top: -110px;
+    top: -120px;
 }
 
 #projectsLink {
     position: absolute;
-    top: -110px;
+    top: -120px;
 }
 
 #hobbiesLink {
     position: absolute;
-    top: -110px;
+    top: -120px;
 }
 
 #emptybot {

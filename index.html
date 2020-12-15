@@ -13,20 +13,22 @@
 
         <div id="header">
             <ul id="menuPrincipal">
-                <li><a href="#">HOME</a></li>
-                <li><a href="index.html#aboutMeLink">ABOUT ME</a></li>
+                <li id="queryOne"><a href="#">HOME</a></li>
+                <li id="queryTwo"><a href="index.html#aboutMeLink">ABOUT ME</a></li>
 
-                <li>
+                <li id="queryThree">
                     <div id="menuHead">
-                        <span>BLOG <span id="triangleD">&#9660;</span></span>
-                        <div id="menuCont">
-                            <a href="index.html#projectsLink">PROJECTS</a>
-                            <a href="index.html#hobbiesLink" id="hobbies">HOBBIES</a>
-                        </div>
+                        <a href="#">
+                            <span>BLOG <span id="triangleD">&#9660;</span></span>
+                            <div id="menuCont">
+                                <a class="projectsLink" href="index.html#projectsLink">PROJECTS</a>
+                                <a href="index.html#hobbiesLink" id="hobbies">HOBBIES</a>
+                            </div>
+                        </a>
                     </div>
                 </li>
 
-                <li><a href="index.html#contactoLink" id="contact">CONTACT</a></li>
+                <li id="queryFour"><a href="index.html#contactoLink" id="contact">CONTACT</a></li>
             </ul>
             <div id="languages">
                 <a href="webs/webGE.html"><img class="flag" src="img/gerFlag.png"></a>
@@ -34,7 +36,7 @@
                 <a href="webs/webEN.html"><img class="flag" src="img/engFlag.png"></a>
                 <a href="webs/webES.html"><img class="flag" src="img/espFlag.png"></a>
             </div>
-            <img src="img/weifu.png">
+            <img id="mainLogo" src="img/weifu.png">
 
         </div>
 
@@ -138,7 +140,7 @@
                         </p>
                         <!-- Gracias StackOverflow -->
                         <a href="cv/CV.pdf" download="JulianCV">
-                        <button type="submit">Download my CV</button>
+                            <button type="submit">Download my CV</button>
                         </a>
                     </div>
                 </div>
@@ -211,11 +213,10 @@
         </div>
 
         <div class="blankSpace">
-            <a name="projectsLink" id="projectsLink"></a>
-            <a name="hobbiesLink" id="hobbiesLink"></a>
         </div>
 
         <div id="projects">
+            <a name="projectsLink" id="projectsLink"></a>
             <div class="subtitle">
                 <h1>Projects</h1>
             </div>
@@ -261,6 +262,8 @@
         </div>
 
         <div id="hobby">
+            <a name="hobbiesLink" id="hobbiesLink"></a>
+
 
             <div class="subtitle">
                 <h1>Hobbies</h1>
@@ -313,11 +316,11 @@
 
 
         <div class="blankSpace">
-            <a name="contactoLink" id="contactoLink"></a>
         </div>
 
 
         <div id="contacto">
+            <a name="contactoLink" id="contactoLink"></a>
             <div class="subtitle">
                 <h1>Contact</h1>
             </div>

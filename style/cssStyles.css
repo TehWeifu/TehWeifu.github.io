@@ -50,7 +50,7 @@ h1 {
     top: 0;
     left: 0;
     background-color: grey;
-    border-bottom: 0.1vw solid #FF7F27;
+    border-bottom: 2px solid #FF7F27;
 }
 
 #header img {
@@ -58,20 +58,21 @@ h1 {
     width: 100px;
     height: auto;
     margin-right: 5%;
-    margin-top: 0.3%;
+    margin-top: 5px;
 }
 
 #menuPrincipal {
+    overflow: visible;
     list-style: none;
     padding-left: 10%;
 }
 
-#menuPrincipal a {
+#menuPrincipal a{
     text-decoration: none;
     color: #FF7F27;
     float: left;
-    margin: 2.7% 1%;
-    letter-spacing: 0.1vw;
+    margin: 45px 40px 0 0;
+    letter-spacing: 2px;
     font-weight: bold;
     font-size: larger;
     padding-bottom: 5px;
@@ -86,8 +87,6 @@ h1 {
 }
 
 #languages {
-    width: 5%;
-    height: 50%;
     float: right;
     vertical-align: middle;
     margin: 1% 5%;
@@ -96,7 +95,7 @@ h1 {
 #languages .flag{
     margin: 5%;
     margin-top: 10%;
-    width: 30%;
+    width: 30px;
     height: auto;
     float: left;
 }
@@ -104,34 +103,21 @@ h1 {
 #triangleD {
     font-size: 0.8em;
 }
-
-#header #menuPrincipal #contact {
-    margin-left: 8%;
-}
-
-#menuHead {
-    position: absolute;
-    display: inline-block;
-    color: #FF7F27;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    font-size: larger;
-    margin: 2.4% 1%;
-  }
   
   #menuCont {
     display: none;
     height: 60px;
+    width: 100px;
     position: absolute;
-    top: 22px;
-    left: -31px;
+    top: 70px;
+    margin: 0 240px;
     background-color: grey;
     border: 2px white solid;
     border-radius: 5px;
     font-size: 0.7em;
-    min-width: 100px;
     padding: 12px 16px;
     z-index: 6;
+    overflow: hidden;
   }
   
   #menuHead:hover #menuCont {
@@ -143,6 +129,180 @@ h1 {
       top: 45px;
       left: 15px;
   }
+
+  #menuPrincipal #menuCont a{
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1150px) {
+    #header {
+        overflow: visible;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #presentacion {
+        margin-top: 140px !important;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #header img#mainLogo {
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        clear: both;
+        margin: 0;
+        padding: 0;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #menuPrincipal {
+        overflow: hidden;
+        width: 320px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #menuPrincipal li {
+        position: absolute;
+        left: 50px;
+
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #menuPrincipal li#queryTwo,
+    #menuPrincipal li#queryFour {
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #menuPrincipal li#queryThree,
+    #menuPrincipal li#queryFour {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #languages {
+        margin: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #menuCont {
+        top: 70px;
+        left: -260px;
+    }
+}
+/* No se lo que voy a hacer el año que viene, pero diseño web seguro que no */
+
+@media screen and (max-width: 500px) {
+    #header {
+        overflow: visible;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #presentacion {
+        margin-top: 140px !important;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header img#mainLogo {
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        clear: both;
+        margin: 0;
+        padding: 0;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuPrincipal {
+        overflow: hidden;
+        width: 320px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuPrincipal li a{
+        position: absolute;
+        left: 0px;
+        top: -20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #menuPrincipal li#queryTwo a {
+        position: absolute;
+        top: 20px;
+        left: -130px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuPrincipal li#queryThree a {
+        position: absolute;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuPrincipal li#queryFour a {
+        position: absolute;
+        top: 60px;
+        left: -130px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuPrincipal li#queryThree,
+    #menuPrincipal li#queryFour {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #languages {
+        margin: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuCont {
+        top: 100px;
+        left: -250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menuCont a.projectsLink {
+        left: 15px;
+    }
+}
+
+
 /* Estilos del menu de la cabecera */
 
 
@@ -522,7 +682,7 @@ h1 {
 
 #aboutMe button {
     position: relative;
-    left: 150px;
+    left: 30%;
     top: 45px;
     background-color: #FF7F27;
     color: white;
@@ -883,17 +1043,17 @@ h1 {
 
 #contactoLink {
     position: absolute;
-    bottom: 25%;
+    top: -110px;
 }
 
 #projectsLink {
     position: absolute;
-    top: 70%;
+    top: -110px;
 }
 
 #hobbiesLink {
     position: absolute;
-    top: 335%;
+    top: -110px;
 }
 
 #emptybot {

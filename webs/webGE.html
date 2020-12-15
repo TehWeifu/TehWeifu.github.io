@@ -4,6 +4,7 @@
     <title>Julián B. Sánchez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../style/cssStyles.css">
+    <link rel="icon" href="../../img/weifu.png">
 </head>
 
 <body>
@@ -12,291 +13,324 @@
 
         <div id="header">
             <ul id="menuPrincipal">
-                <li><a href="#">HOME</a></li>
-                <li><a href="webGE.html#aboutMeLink">ÜBER MICH</a></li>
+                <li id="queryOne"><a href="#">HOME</a></li>
+                <li id="queryTwo"><a href="webGE.html#aboutMeLink">ÜBER MICH</a></li>
 
-                <li>
+                <li id="queryThree">
                     <div id="menuHead">
-                        <span>BLOG <span id="triangleD">&#9660;</span></span>
-                        <div id="menuCont">
-                            <a href="webGE.html#projectsLink">PROJEKTE</a>
-                            <a href="webGE.html#hobbiesLink" id="hobbies">HOBBIES</a>
-                        </div>
+                        <a href="webGE.html#projectsLink">
+                            <span>BLOG <span id="triangleD">&#9660;</span></span>
+                            <div id="menuCont">
+                                <a class="projectsLink" href="webGE.html#projectsLink">PROJEKTE</a>
+                                <a href="webGE.html#hobbiesLink" id="hobbies">HOBBIES</a>
+                            </div>
+                        </a>
                     </div>
                 </li>
 
-                <li><a href="webGE.html#contactoLink" id="contact">KONTAKT</a></li>
+                <li id="queryFour"><a href="webGE.html#contactoLink" id="contact">KONTAKT</a></li>
             </ul>
             <div id="languages">
-                <a href="#"><img class="flag" src="../img/gerFlag.png"></a>
+                <a href="webGE.html"><img class="flag" src="../img/gerFlag.png"></a>
                 <a href="webVA.html"><img class="flag" src="../img/valFlag.png"></a>
-                <a href="webVA.html"><img class="flag" src="../img/engFlag.png"></a>
+                <a href="webEN.html"><img class="flag" src="../img/engFlag.png"></a>
                 <a href="webES.html"><img class="flag" src="../img/espFlag.png"></a>
             </div>
-            <img src="../img/WestWorld.png">
+            <img id="mainLogo" src="../img/weifu.png">
 
         </div>
 
-        <div class="clear"></div>
 
         <div id="presentacion">
-            <h1>Hallo, ich bin <span id="nombre">Julián B.</span></h1>
-            <h2>Informatischer Student</h2>
+            <div id="presentationCont">
+                <h1>Hallo, ich bin <span id="nombre">Julián B.</span></h1>
+                <h2>Informatischer Student</h2>
+            </div>
             <img src="../img/yoGrande.png">
-
         </div>
 
-        <div class="clear"></div>
 
         <a name="aboutMeLink"></a>
         <div class="blankSpace">
         </div>
 
-        <div class="clear"></div>
-
 
         <div id="aboutMe">
-            <h1>Über mich</h1>
+            <div class="subtitle">
+                <h1>Über mich</h1>
+            </div>
 
-            <div id="description">
-                <h2>Engagiert & Verantwortungsbewusste</h2>
-                <p>
-                    Ich lerne Mikroinformatik Systeme und Netzwerke (zweites Jahr). Gute Ergebnisse dank einer strengen
-                    Arbeitsmoral, basiert auf Ausdauer, Engagement und Einsatz für eine gut gemachte Arbeit. </p>
-                <br>
-                <p>
-                    Durch akademische und persönliche Ausbildung habe ich Fähigkeiten erworben in: Tippen, MS Office,
+            <div id="aboutContDiv">
+
+                <div id="skillsCont" class="aboutInner">
+                    <div id="coding">
+
+                        <h2>Skills</h2>
+
+                        <div id="cpp" class="progress">
+                            <label class="name">C++</label>
+                            <label class="percent">80%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="eighty">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="phy" class="progress">
+                            <label class="name">Python</label>
+                            <label class="percent">50%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="fifty">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="html" class="progress">
+                            <label class="name">HTML</label>
+                            <label class="percent">30%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="thirty1">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="css" class="progress">
+                            <label class="name">CSS</label>
+                            <label class="percent">30%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="thirty2">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="js" class="progress">
+                            <label class="name">JavaScript</label>
+                            <label class="percent">30%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="thirty3">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="descriptionCont" class="aboutInner">
+
+                    <div id="description">
+                        <h2 id="descriptionH">Engagiert & Verantwortungsbewusste</h2>
+                        <p id="firstP">Ich lerne Mikroinformatik Systeme und Netzwerke (zweites Jahr). Gute Ergebnisse dank einer strengen
+                            Arbeitsmoral, basiert auf Ausdauer, Engagement und Einsatz für eine gut gemachte Arbeit.
+                        </p>
+                        <p>
+                            Durch akademische und persönliche Ausbildung habe ich Fähigkeiten erworben in: Tippen, MS Office,
                     Versammlung und Wartung von Computerausrüstung, Design und Installation von LAN-Netzwerken und
-                    Computersicherheit. </p>
-                <button>Herunteladen CV</button>
-            </div>
-
-            <div id="coding">
-
-                <h2>Skills</h2>
-
-                <div id="cpp" class="progress">
-                    <label class="name">C++</label>
-                    <label class="percent">80%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="eighty">
-
-                        </div>
+                    Computersicherheit.
+                        </p>
+                        <!-- Gracias StackOverflow -->
+                        <a href="../cv/CV.pdf" download="JulianCV">
+                            <button type="submit">Herunteladen CV</button>
+                        </a>
                     </div>
                 </div>
 
-                <div id="phy" class="progress">
-                    <label class="name">Python</label>
-                    <label class="percent">50%</label>
+                <div class="aboutInner">
 
-                    <div class="backgroud">
-                        <div class="bar" id="fifty">
+                    <div id="languages">
 
+                        <h2>Sprachen</h2>
+
+                        <div id="esp" class="progress">
+                            <label class="name">Spanisch</label>
+                            <label class="percent">100%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="onehundred">
+
+                                </div>
+                            </div>
                         </div>
+
+                        <div id="val" class="progress">
+                            <label class="name">Valencian</label>
+                            <label class="percent">90%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="ninety1">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="eng" class="progress">
+                            <label class="name">Englisch</label>
+                            <label class="percent">90%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="ninety2">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="ger" class="progress">
+                            <label class="name">Deutsch</label>
+                            <label class="percent">50%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="fifty">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="fre" class="progress">
+                            <label class="name">Französisch</label>
+                            <label class="percent">20%</label>
+
+                            <div class="backgroud">
+                                <div class="bar" id="twenty">
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <div id="html" class="progress">
-                    <label class="name">HTML</label>
-                    <label class="percent">30%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="thirty1">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="css" class="progress">
-                    <label class="name">CSS</label>
-                    <label class="percent">30%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="thirty2">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="js" class="progress">
-                    <label class="name">JavaScript</label>
-                    <label class="percent">30%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="thirty3">
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="languages">
-
-                <h2>Idiomas</h2>
-
-                <div id="esp" class="progress">
-                    <label class="name">Spanisch</label>
-                    <label class="percent">100%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="onehundred">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="val" class="progress">
-                    <label class="name">Valencian</label>
-                    <label class="percent">90%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="ninety1">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="eng" class="progress">
-                    <label class="name">Englisch</label>
-                    <label class="percent">90%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="ninety2">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="ger" class="progress">
-                    <label class="name">Deutsch</label>
-                    <label class="percent">50%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="fifty">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="fre" class="progress">
-                    <label class="name">Französisch</label>
-                    <label class="percent">20%</label>
-
-                    <div class="backgroud">
-                        <div class="bar" id="twenty">
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>
-
-        <div class="clear"></div>
 
         <div class="blankSpace">
-            <a name="projectsLink" id="projectsLink"></a>
-            <a name="hobbiesLink" id="hobbiesLink"></a>
         </div>
-
-        <div class="clear"></div>
-
 
         <div id="projects">
-            <h1>Projekte</h1>
+            <a name="projectsLink" id="projectsLink"></a>
+            <div class="subtitle">
+                <h1>Projekte</h1>
+            </div>
 
-            <label id="cred">Kreditrechner<span class="lanProject">Python</span></label>
-            <p>Das Programm ermöglicht der Nutzer, Einzahlungen vorzunehmen, Geld von einem Bankkonto abzuheben und
+            <div id="proDiv">
+                <div id="proDivCont">
+                    <label id="cred" class="testEle">Kreditrechner<span class="lanProject">Python</span></label>
+                    <p class="testEle">
+                        Das Programm ermöglicht der Nutzer, Einzahlungen vorzunehmen, Geld von einem Bankkonto abzuheben und
                 Bankgeschäfte wie jährliche Zinsen und Differenzzahlungen basierend auf der Zinsart durchzuführen. Das
                 Programm kann die Parameter über die Befehlszeile empfangen.
-            </p>
+                    </p>
 
-            <label id="disc">Discord Bot<span class="lanProject">JavaScript</span></label>
-            <p id="discP">
-                Der Bot, bietet zahlreiche Befehle, sowohl nützlich als auch unterhaltsam. Der Code wird ständig
+                    <p id="discP" class="testEle">
+                        Der Bot, bietet zahlreiche Befehle, sowohl nützlich als auch unterhaltsam. Der Code wird ständig
                 gewartet und wöchentlich werden neue Funktionen hinzugefügt. Entwickelt für Gruppen von Bekannten, die
                 das Beste aus ihrem Discord-Kanal herausholen möchten.
-            </p>
+                    </p>
+                    <label id="disc" class="testEle">Discord Bot<span class="lanProject">JavaScript</span></label>
 
-            <label id="comb">Dateikombinierer<span class="lanProject">C++</span></label>
-            <p id="combP">Programm zum Kombinieren des Inhalts mehrerer Textdatei in einer einzigen Datei.
+                    <label id="comb" class="testEle">Dateikombinierer<span class="lanProject">C++</span></label>
+                    <p id="combP" class="testEle">
+                        Programm zum Kombinieren des Inhalts mehrerer Textdatei in einer einzigen Datei.
                 Ursprünglich für die Arbeit mit .pdf konzipiert, akzeptiert es jedoch jede Art von Textdatei.
-            </p>
+                    </p>
 
-            <label id="more">Entdecken Sie viele mehr...<span class="lanProject">C++, JS, HTML, etc.</span></label>
-            <p id="moreP">
-                Ich suche häufig nach Projekten zur Entwicklung oder Zusammenarbeit, da dies der beste
-                Weg ist, um zu lernen. Um alle Projekte zu sehen, an denen ich gearbeitet habe, besuchen Sie meine
-                GitHub Profil.<ahref="#">Link</a>
-            </p>
+                    <p id="moreP" class="testEle">Ich suche häufig nach Projekten zur Entwicklung oder Zusammenarbeit, da dies der beste
+                        Weg ist, um zu lernen. Um alle Projekte zu sehen, an denen ich gearbeitet habe, besuchen Sie meine
+                        GitHub Profil. <a
+                            href="https://github.com/TehWeifu?tab=repositories">Link</a></p>
+                    <label id="more" class="testEle">Entdecken Sie mehr...<span class="lanProject">C++, JS, HTML,
+                            etc.</span></label>
+                </div>
+            </div>
 
         </div>
 
-        <div class="clear"></div>
-
         <div id="hobby">
-            <h1>Hobbies</h1>
-            <div id="read">
-                <img src="../img/book.png">
-                <p>
-                    Ich bin ein Fan des Lesens seit Kindheit und zunehmend mit der Gewohnheit des Lesens beschäftigt.
+            <a name="hobbiesLink" id="hobbiesLink"></a>
+
+
+            <div class="subtitle">
+                <h1>Hobbies</h1>
+            </div>
+
+
+
+            <div id="hobbyContDiv">
+
+                <div id="redCont" class="hobbyInner">
+                    <div id="read" class="hobbyEle">
+                        <img src="../img/book.png">
+                        <p>
+                            Ich bin ein Fan des Lesens seit Kindheit und zunehmend mit der Gewohnheit des Lesens beschäftigt.
                     Ich
                     bin immer auf der Suche nach Zeit für ein gutes Buch, egal wie beschäftigt ich bin. Ich lese
-                    besonders gerne valencianische Literatur sowie Popularisierungsbuch von Wissenschaft und
-                    philosophische.
-                </p>
-            </div>
+                    besonders gerne valencianische Literatur sowie Popularisierungsbuch.
+                        </p>
+                    </div>
+                </div>
 
-            <div id="cook">
-                <img src="../img/cook.jpg">
-                <p>Was als "Überlebensküche" begann, ist heute eines meiner großen Hobbys geworden. Ich koche gerne für
+                <div id="cookCont" class="hobbyInner">
+                    <div id="cook" class="hobbyEle">
+                        <img src="../img/cook.jpg">
+                        <p>
+                            Was als "Überlebensküche" begann, ist heute eines meiner großen Hobbys geworden. Ich koche gerne für
                     meine Familie und mich selbst, besonders wenn ich Musik höre. Ich suche immer nach neuen
-                    Rezepten, obwohl nichts mit nichts kann meine Paella übertreffen.</p>
-            </div>
+                    Rezepten, obwohl nichts mit nichts kann meine Paella übertreffen.
+                        </p>
+                    </div>
+                </div>
 
-            <div id="sport">
-                <img src="../img/bike.jpg">
-                <p>Sport ist zu einer der Grundpfeiler meines Lebens geworden. Durch die Kombination von Training und
+                <div id="sportCont" class="hobbyInner">
+                    <div id="sport" class="hobbyEle">
+                        <img src="../img/bike.jpg">
+                        <p>
+                            Sport ist zu einer der Grundpfeiler meines Lebens geworden. Durch die Kombination von Training und
                     eine richtige
                     Diät habe ich einen aktiven und gesunden Geist. Dank des Sports kann ich mich von der Routine
                     abkoppeln und
-                    dem Alltag mit Energie begegnen.</p>
+                    dem Alltag mit Energie begegnen.
+                        </p>
+                    </div>
+                </div>
             </div>
-
         </div>
-
-        <div class="clear"></div>
 
 
         <div class="blankSpace">
-            <a name="contactoLink" id="contactoLink"></a>
         </div>
-
-        <div class="clear"></div>
 
 
         <div id="contacto">
-            <h1>Kontakt</h1>
-            <h2 id="hForm">Schreib mir eine Nachricht</h2>
-            <h2 id="hData">Kontaktinformation</h2>
+            <a name="contactoLink" id="contactoLink"></a>
+            <div class="subtitle">
+                <h1>Kontakt</h1>
+            </div>
 
 
             <div id="contactoForm">
+                <h2 id="hForm">Schreib mir eine Nachricht</h2>
                 <form action="#" method="POST">
                     <input type="text" placeholder="Name" required>
                     <input type="text" placeholder="E-mail" required>
                     <textarea placeholder="Schreiben Sie Ihre Nachricht..."></textarea required>
-                    <input type="submit" id="subBut" value="Schicken" name="ENVIAR">
-                </form>
+                        <input type="submit" id="subBut" value="Schicken" name="SEND">
+                    </form>
             </div>
-
+                
             <div id="contactoData">
+                <h2 id="hData">Kontaktinformation</h2>
                 <ul id="ulData">
                     <li id="liAdd" class="listaPrin">
-                        <h3>Adresse</h3>
+                        <img id="addPic" src="../img/adLogo.png">
+                        <h3 >Adresse</h3>
                         <ul>
                             <li>San Onofre Avenue, 27</li>
                             <li>Quart de Poblet, 46930</li>
@@ -305,6 +339,7 @@
                     </li>
 
                     <li id="liPho" class="listaPrin">
+                        <img id="phoPic" src="../img/phLogo.png">
                         <h3>Telefonnummer</h3>
                         <ul>
                             <li>(+34) 611 600 946</li>
@@ -313,6 +348,7 @@
                     </li>
 
                     <li id="liEma" class="listaPrin">
+                        <img id="emailPic" src="../img/emLogo.png">
                         <h3>E-mail</h3>
                         <ul>
                             <li>JulianBSanchezLopez@gmail.com</li>
@@ -322,18 +358,18 @@
                 </ul>
             </div>
 
-            <img id="addPic" src="../img/adLogo.png">
-            <img id="emailPic" src="../img/emLogo.png">
-            <img id="phoPic" src="../img/phLogo.png">
-
-        </div>
+    </div>
 
         <div id="foot">
-            <a href="https://www.facebook.com/julian.sanchezlopez.9"><img id="fbL" src="../img/fbLogoW.png"></a>
-            <a href="https://twitter.com/julian_bsl"><img id="twL" src="../img/twLogoW.png"></a>
-            <a href="https://www.instagram.com/julian.bsl/?hl=en"><img id="igL" src="../img/IgLogoW.png"></a>
-            <a href="https://github.com/TehWeifu"><img id="ghL" src="../img/ghLogoW.png"></a>
-            <p>&#169; Website für den persönlichen Gebrauch. Alle Rechte vorbehalten | Diseño hecho por Julián B. Sánchez</p>
+            <div id="socialDiv">
+                <div id="socialCont">
+                    <a href="https://www.facebook.com/julian.sanchezlopez.9"><img id="fbL" src="../img/fbLogoW.png"></a>
+                    <a href="https://twitter.com/julian_bsl"><img id="twL" src="../img/twLogoW.png"></a>
+                    <a href="https://www.instagram.com/julian.bsl/?hl=en"><img id="igL" src="../img/IgLogoW.png"></a>
+                    <a href="https://github.com/TehWeifu"><img id="ghL" src="../img/ghLogoW.png"></a>
+                </div>
+            </div>
+            <p>&#169; Website für persönlichen Gebrauch. Alle Rechte vorbehalten | Entwickelt von Julián B. Sánchez</p>
             <h4>ILUM</h4>
         </div>
 
@@ -344,7 +380,7 @@
         <div id="backgroud">
         </div>
 
-        <a href="webGE.html#top">
+        <a href="#">
             <div id="return">
             </div>
         </a>

@@ -1,3 +1,4 @@
+/* Estilos generales y links */
 * {
     margin: 0;
     padding: 0;
@@ -44,6 +45,74 @@ h1 {
     font-weight: lighter;
     color: white;
 }
+
+#emptybot {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: grey;
+    z-index: 2;
+}
+
+#contactoLink {
+    position: absolute;
+    top: -90px;
+}
+
+#projectsLink {
+    position: absolute;
+    top: -110px;
+}
+
+#hobbiesLink {
+    position: absolute;
+    top: -110px;
+}
+/* Estilos generales y links */
+
+
+/* Estilos del fondo de la pagina */
+#backgroud {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+    background: url(../img/vlc.jpg) no-repeat;
+}
+/* Estilos del fondo de la pagina */
+
+
+/* Estilos de los espacios transparentes */
+.blankSpace {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+/* Estilos de los espacios transparentes */
+
+
+/* Estilos del boton para volver al inicio */
+#return {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: url(../img/upArrOra.png) no-repeat grey;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px white solid;
+    z-index: 2;
+}
+
+#return:hover {
+    background: url(../img/upArrBlack.png) no-repeat #FF7F27;
+    background-position: center;
+    z-index: 2;
+}
+/* Estilos del boton para volver al inicio */
 
 
 /* Estilos del menu de la cabecera */
@@ -142,42 +211,6 @@ h1 {
 }
 
 @media screen and (max-width: 1150px) {
-    #header {
-        overflow: visible;
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    #presentacion {
-        margin-top: 140px !important;
-        margin-bottom: 80px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    #header img#mainLogo {
-        position: absolute;
-        bottom: 30px;
-        right: 10px;
-        clear: both;
-        margin: 0;
-        padding: 0;
-        margin-right: 40px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    #menuPrincipal {
-        overflow: hidden;
-        width: 320px;
-        margin-top: 30px;
-        margin-bottom: 0;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 1150px) {
     #menuPrincipal li {
         position: absolute;
         left: 50px;
@@ -193,42 +226,20 @@ h1 {
 }
 
 @media screen and (max-width: 1150px) {
-    #menuPrincipal li#queryThree,
-    #menuPrincipal li#queryFour {
-        top: 100px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    #languages {
-        margin: 0;
-        margin-right: 20px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    #menuCont {
-        top: 70px;
-        left: -260px;
-    }
-}
-/* No se lo que voy a hacer el año que viene, pero diseño web seguro que no */
-
-@media screen and (max-width: 500px) {
     #header {
         overflow: visible;
         height: 130px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #presentacion {
         margin-top: 10px !important;
         margin-bottom: 80px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #header img#mainLogo {
         position: absolute;
         top: 10px;
@@ -242,7 +253,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #header #languages {
         position: absolute;
         top: 10px;
@@ -252,7 +263,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuPrincipal {
         overflow: hidden;
         width: 320px;
@@ -262,7 +273,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuPrincipal li a{
         position: absolute;
         left: -35px;
@@ -270,7 +281,7 @@ h1 {
         font-size: 0.85em;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuPrincipal li#queryTwo a {
         position: absolute;
         top: 0px;
@@ -279,7 +290,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuPrincipal li#queryThree a {
         position: absolute;
         top: -70px;
@@ -288,7 +299,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuPrincipal li#queryFour a {
         position: absolute;
         top: -70px;
@@ -296,21 +307,21 @@ h1 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuPrincipal li#queryThree,
     #menuPrincipal li#queryFour {
         top: 100px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #languages {
         margin: 0;
         margin-right: 20px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #menuCont {
         top: 0px;
         left: -125px;
@@ -318,7 +329,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     #header #menuHead #menuCont a.projectsLink {
         position: absolute;
         top: 10px;
@@ -326,10 +337,7 @@ h1 {
         width: 100px;
     }
 }
-
-
 /* Estilos del menu de la cabecera */
-
 
 
 /* Estilos de la presentacion */
@@ -418,234 +426,7 @@ h1 {
         margin-right: auto;
     }
 }
-
 /* Estilos de la presentacion */
-
-
-
-/* Estilos del boton para volver al inicio */
-#return {
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    background: url(../img/upArrOra.png) no-repeat grey;
-    background-position: center;
-    border-radius: 50%;
-    border: 3px white solid;
-    z-index: 2;
-}
-
-#return:hover {
-    background: url(../img/upArrBlack.png) no-repeat #FF7F27;
-    background-position: center;
-    z-index: 2;
-}
-/* Estilos del boton para volver al inicio */
-
-
-
-/* Estilos del fondo de la pagina */
-#backgroud {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-    background: url(../img/vlc.jpg) no-repeat;
-}
-/* Estilos del fondo de la pagina */
-
-.blankSpace {
-    position: relative;
-    width: 100%;
-    height: 30%;
-}
-
-
-/* Estilos del apartado de contacto */
-#contacto {
-    background-color: grey;
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-    overflow: hidden;
-}
-
-#contacto h2 {
-    color: white;
-}
-
-#contacto #contactoForm {
-    float: left;
-    width: 35%;
-    height: 60%;
-    margin: 5% 5% 5% 15%;
-}
-
-#contacto #contactoForm input,
-#contacto #contactoForm textarea {
-    width: 100%;
-    height: 45px;
-    margin: 2% 0;
-    padding: 1% 0 1% 2%;    
-    border: solid 1px #FF7F27
-}
-
-#contacto #contactoForm input#subBut {
-    background-color: #FF7F27;    
-    color: white;
-    letter-spacing: 2px;
-    width: 135px;
-    height: 50px;
-    border-radius: 10px;
-    border: solid lightgrey 2px;
-    padding-left: 1%;
-    font-size: 1.2em;
-}
-
-#contacto #contactoForm input#subBut:hover {
-    border: 2px white solid;
-}
-
-#contacto #contactoForm input#subBut:active {
-    border: solid 2px #FF7F27;
-    color: #FF7F27;
-    background-color: white;
-}
-
-#contacto #contactoForm textarea {
-    height: 140px;
-}
-
-
-#contacto #contactoForm input:focus,
-#contacto #contactoForm textarea:focus {
-    border: 2px #FF7F27 solid;
-}
-
-#contacto #contactoData {
-    float: left;
-    color: white;
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
-#contacto #contactoData ul{
-    list-style: none;
-}
-
-#contacto #contactoData li.listaPrin{
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 5%;
-}
-
-#contacto #contactoData li.listaPrin li{
-    margin-top: 2%;
-    margin-left: 20%;
-}
-
-
-#addPic, #phoPic, #emailPic {
-    float: left;
-    margin-right: 2%;
-}
-
-@media screen and (max-width: 1250px) {
-    #contacto #contactoForm {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    #contacto #contactoData {
-        margin: -5% 0% 0% 0%;
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    #contacto #contactoData #hData{
-        margin-left: 5%; 
-    }
-}
-/* Estilos del apartado de contacto */
-
-
-
-/* Estilos del apartado foot */
-#foot {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 250px;
-    z-index: 2;
-    background-color: #FF7F27;
-}
-
-#foot #socialDiv {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 80px;
-}
-
-#foot #socialDiv #socialCont{
-    overflow: hidden;
-    width: 300px;
-    margin: 0 auto;
-}
-
-#foot img {
-    margin: 0% 5% 0% 0%;
-    float: left;
-    width: 50px;
-    height: auto;
-}
-
-#foot img#ghL {
-    margin: 0%;
-}
-
-#foot img#igL {
-    width: 55px;
-    margin: 0% 9% 0% 0%;
-}
-
-#foot img#twL {
-    width: 80px;
-    margin-top: 4px;
-}
-
-#foot p {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-
-#foot h4 {
-    display: inline;
-    position: relative;
-    color: #FF7F27;
-    border: 1px white solid;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    left: 48%;
-    padding: 5px;
-}
-
-#foot h4:hover {
-    color: white;
-}
-/* Estilos del apartado foot */
-
 
 
 /* Estilos del apartado aboutMe */
@@ -707,9 +488,6 @@ h1 {
 }
 
 #aboutMe button {
-    position: relative;
-    /* left: 30%;
-    top: 45px; */
     margin: 20px 25%;
     background-color: #FF7F27;
     color: white;
@@ -880,7 +658,6 @@ h1 {
     margin-right: auto;
 }
 
-
 #projects label {
     float: left;
     margin-right: 1%;
@@ -978,7 +755,6 @@ h1 {
 /* Estilos del apartado projectos */
 
 
-
 /* Estilos del apartado hobbies */
 
 #hobby {
@@ -1070,25 +846,182 @@ h1 {
 /* Estilos del apartado hobbies */
 
 
-#contactoLink {
-    position: absolute;
-    top: -120px;
-}
-
-#projectsLink {
-    position: absolute;
-    top: -120px;
-}
-
-#hobbiesLink {
-    position: absolute;
-    top: -120px;
-}
-
-#emptybot {
+/* Estilos del apartado de contacto */
+#contacto {
+    background-color: grey;
     position: relative;
     width: 100%;
-    height: 15%;
-    background-color: grey;
+    height: auto;
     z-index: 2;
+    overflow: hidden;
 }
+
+#contacto h2 {
+    color: white;
+}
+
+#contacto #contactoForm {
+    float: left;
+    width: 35%;
+    height: 60%;
+    margin: 5% 5% 5% 15%;
+}
+
+#contacto #contactoForm input,
+#contacto #contactoForm textarea {
+    width: 100%;
+    height: 45px;
+    margin: 2% 0;
+    padding: 1% 0 1% 2%;    
+    border: solid 1px #FF7F27
+}
+
+#contacto #contactoForm input#subBut {
+    background-color: #FF7F27;    
+    color: white;
+    letter-spacing: 2px;
+    width: 135px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid lightgrey 2px;
+    padding-left: 1%;
+    font-size: 1.2em;
+}
+
+#contacto #contactoForm input#subBut:hover {
+    border: 2px white solid;
+}
+
+#contacto #contactoForm input#subBut:active {
+    border: solid 2px #FF7F27;
+    color: #FF7F27;
+    background-color: white;
+}
+
+#contacto #contactoForm textarea {
+    height: 140px;
+}
+
+
+#contacto #contactoForm input:focus,
+#contacto #contactoForm textarea:focus {
+    border: 2px #FF7F27 solid;
+}
+
+#contacto #contactoData {
+    float: left;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#contacto #contactoData ul{
+    list-style: none;
+}
+
+#contacto #contactoData li.listaPrin{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+#contacto #contactoData li.listaPrin li{
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+
+#addPic, #phoPic, #emailPic {
+    float: left;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 1250px) {
+    #contacto #contactoForm {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #contacto #contactoData {
+        margin: -5% 0% 0% 0%;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #contacto #contactoData #hData{
+        margin-left: 5%; 
+    }
+}
+/* Estilos del apartado de contacto */
+
+
+/* Estilos del apartado foot */
+#foot {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+    z-index: 2;
+    background-color: #FF7F27;
+}
+
+#foot #socialDiv {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+#foot #socialDiv #socialCont{
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#foot img {
+    margin: 0% 5% 0% 0%;
+    float: left;
+    width: 50px;
+    height: auto;
+}
+
+#foot img#ghL {
+    margin: 0%;
+}
+
+#foot img#igL {
+    width: 55px;
+    margin: 0% 9% 0% 0%;
+}
+
+#foot img#twL {
+    width: 80px;
+    margin-top: 4px;
+}
+
+#foot p {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#foot h4 {
+    display: inline;
+    position: relative;
+    color: #FF7F27;
+    border: 1px white solid;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    left: 48%;
+    padding: 5px;
+}
+
+#foot h4:hover {
+    color: white;
+}
+/* Estilos del apartado foot */

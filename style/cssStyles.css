@@ -54,19 +54,24 @@ h1 {
     z-index: 2;
 }
 
-#contactoLink {
+#aboutMeLink{
     position: absolute;
-    top: -90px;
+    top: -10%;
 }
 
 #projectsLink {
     position: absolute;
-    top: -110px;
+    top: -11%;
 }
 
 #hobbiesLink {
     position: absolute;
-    top: -110px;
+    top: -12%;
+}
+
+#contactoLink {
+    position: absolute;
+    top: -13%;
 }
 /* Estilos generales y links */
 
@@ -432,6 +437,7 @@ h1 {
 /* Estilos del apartado aboutMe */
 #aboutMe {
     position: relative;
+    top: 160px;
     width: 100%;
     background-color: grey;
     z-index: 2;
@@ -583,6 +589,12 @@ h1 {
 #languages #fre {
     position: relative;
     top: 100px;
+}
+
+@media screen and (max-width: 1150px) {
+    #aboutMe{
+        top: 0px;
+    }
 }
 
 @media screen and (max-width: 1550px) {

@@ -1,0 +1,128 @@
+* {
+	font-size: 30px;
+}
+
+body {
+	background-color: #fff; 
+}
+
+/*Article*/
+
+#nosotros {
+	background-color: #20A7A6;
+}
+
+.title {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Candara', 'courier', sans-serif;
+	color: #fff;
+	margin-top: 60px;
+}
+
+.departamento {
+	background-color: #20A7A6;
+	color: #fff;
+}
+
+#organigrama img {
+	width: 45%;
+}
+
+#organigrama {
+	color: #000;
+	font-weight: bolder;
+}
+
+.article {
+	display: block;
+	position: relative;
+	width: 100%;
+	top: 90px;
+}
+
+	/*Secciones en Article*/
+
+.article_section {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	top: 50px;
+	background-color: #20A7A6;
+	font-family: 'Candara', 'courier', sans-serif;
+	color: #fff;
+}
+
+.link-box_a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.article_section_title {
+	padding-top: 35px;
+	text-align: center;
+}
+
+.article_section_text-box {
+	text-align: justify;
+	height: 350px;
+}
+
+.article_section p {
+	margin: 2% 1%;
+}
+
+.article_section_link-box {
+	margin: 0 auto;
+	width: 300px;
+	height: 50px;
+	border: solid 4px #fff;
+	text-align: center;
+	transition: .3s;
+}
+
+.article_section_link-box:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.article_section_link-box p {
+	font-size: 20px;
+	padding: auto;
+	margin: 4% 2%;
+}
+
+/*Footer*/
+
+.footer {
+	background-color: red;
+	display: block;
+	position: relative;
+	top: 90px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1050px) {
+	
+	.article_section {
+		height: 700px
+	}
+
+	#Nube {
+		height: 500px;
+		margin-bottom: 50px;
+	}
+
+	#Nube .article_section_img-box {
+		width: 100%;
+	}
+
+	.article_section_text-box {
+		text-align: left;
+	}
+
+	.article_section p {
+		margin: 4% 2%;
+	}
+}

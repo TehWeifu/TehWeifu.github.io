@@ -1,0 +1,90 @@
+body {
+	background-color: #76C9E2; 
+}
+
+/*Article*/
+
+.article {
+	display: block;
+	position: relative;
+	width: 100%;
+	top: 90px;
+}
+
+#mision {
+	font-size: 50px;
+	margin-top: 30px;
+	color: #000;
+	text-align: center;
+}
+
+#vision {
+	font-size: 45px;
+	margin-top: 90px;
+	color: #000;
+	text-align: center;
+}
+
+#valores {
+	font-size: 40px;
+	margin-top: 90px;
+	color: #000;
+	text-align: left;
+}
+
+#title {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#valores p {
+	margin-top: 10px;
+}
+
+#generar {
+	color: #056dff;
+}
+
+#exito {
+	color: #f00;
+}
+
+#clientes {
+	color: #f5f827;
+}
+
+#soluciones {
+	color: #1bbe23;
+}
+
+#principal {
+	color: #056dff;
+}
+
+#desarrollo {
+	color: #f00;
+}
+
+#confianza {
+	color: #f5f827;
+}
+
+#profesionalidad {
+	color: #1bbe23;
+}
+
+.article_section {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	top: 50px;
+	font-family: 'Candara', 'courier', sans-serif;
+	color: #fff;
+}
+
+
+/*Responsive*/
+@media only screen and (max-width: 1050px) {
+	
+}

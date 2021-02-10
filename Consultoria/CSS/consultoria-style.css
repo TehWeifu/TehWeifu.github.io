@@ -1,0 +1,66 @@
+body {
+	background-color: #20A7A6;
+}
+
+/*Article*/
+
+article {
+	display: block;
+	position: relative;
+	width: 100%;
+	top: 90px;
+}
+
+.text {
+	text-align: justify;
+	font-size: 20px;
+	position: relative;
+	width: 96%;
+	background-color: #20A7A6;
+	font-family: 'Candara', 'courier', sans-serif;
+	color: #fff;
+	margin: 2%;
+}
+
+.text p {
+	margin-top: 10px;
+}
+
+a, a:visited, a:link {
+	color: #fff;
+}
+
+.title {
+	font-size: 30px;
+	background-color: #20A7A6;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bolder;
+	color: #fff;
+}
+
+.article_section_text-box {
+	text-align: justify;
+	height: 350px;
+}
+
+.article_section p {
+	margin: 2% 1%;
+}
+
+h4 {
+	margin-left: 2%;
+}
+
+#sec2 {
+	height: 700px;
+}
+
+#sec3 {
+	height: 800px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1050px) {
+	
+}

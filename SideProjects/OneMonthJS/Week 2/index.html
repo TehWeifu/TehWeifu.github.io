@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mr. JavaScript</title>
+</head>
+<body>
+
+<h1>I'm Mr. JavaScript</h1>
+<a href="#" class="hello">Reset</a>
+<a href="#" class="howareyou">Hey JavaScript, how ya feeling?</a>
+<script type="text/javascript">
+
+    const a = document.querySelector(".howareyou");
+    const reset = document.querySelector(".hello");
+
+    a.addEventListener('click', () => {
+
+        const h1 = document.querySelector("h1");
+        h1.innerHTML = "I'm alive!";
+        console.log(h1);
+
+    });
+
+    reset.addEventListener('click', () => {
+
+        const h1 = document.querySelector("h1");
+        h1.innerHTML = "I'm Mr. JavaScript";
+        console.log(h1);
+
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Graph 1</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['q', 'IT', 'CT', 'CF'],
+                ['50',  15000,     25000,   20000],
+                ['100',  30000,    30000,   20000],
+                ['150',  45000,    35000,   20000],
+                ['200',  60000,    40000,   20000]
+            ]);
+
+            var options = {
+                title: 'Umbral de Rentabilidad',
+                curveType: 'none', //curveType: smooth the angle of the function
+                legend: { position: 'bottom' },
+                colors: ['red', 'darkblue', 'lightblue']
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+<div id="curve_chart" style="width: 900px; height: 500px"></div>
+</body>
+</html>

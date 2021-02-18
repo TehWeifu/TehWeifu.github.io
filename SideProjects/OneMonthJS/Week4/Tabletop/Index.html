@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabletop</title>
+    <style type="text/css">
+        body {
+            background: pink;
+        }
+    </style>
+</head>
+<body class="js-body">
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type='text/javascript'>
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1dV9Pa93VTFYnXJw9ZIlMhPueLLK8a7c_8-xoQxabt3E/edit?usp=sharing';
+
+    function init() {
+        Tabletop.init( { key: publicSpreadsheetUrl,
+            callback: showInfo,
+            simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+        // alert('Successfully processed!')
+        // console.log(data);
+        printNames(data); //This mine uwu
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+
+
+    //This mine uwu
+    function printNames(data) {
+        let res = document.createElement('div');
+        let body = document.querySelector('.js-body');
+
+        data.forEach((element) => {
+            res.innerHTML += `${element.Name} likes ${element.Category} <br>`;
+        });
+        body.appendChild(res);
+    }
+</script>
+</body>
+</html>

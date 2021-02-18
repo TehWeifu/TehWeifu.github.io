@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Calculadora Nómima</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+</html>
+
+<body>
+    <div id="contenedor">
+        <div id="header">
+            <h1>Calculadora de nóminas</h1>
+            <h2>Web desarrollada por <a href="https://tehweifu.github.io/">Julián B. Sánchez</a></h2>
+        </div>
+        <div id="inputs">
+            <h2>Datos:</h2>
+            <form method="GET">
+
+                <ul>
+                    <li>
+                        <div class="values">
+                            <label>Salario Base: </label>
+                            <input type="number" step="0.01" placeholder="0.00" min="0" id="salarioBase">
+                            <label>€</label><br>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="values">
+                            <label>Grupo profesional</label>
+                            <input type="number" min="1" max="7" id="grupoProf" placeholder="1" class="smallB">
+                            <label> | Contrato Indefinido</label>
+                            <input type="checkbox" checked id="contratoIndef" class="checkB"><br>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="values">
+                            <label>Horas extra normales: </label>
+                            <input type="number" placeholder="0" min="0" id="horasExtraNormalesHoras" class="smallB">
+                            <label>horas a </label>
+                            <input type="number" step="0.01" placeholder="0.00" id="horasExtraNormalesDinero">
+                            <label>€/h</label><br>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="values">
+                            <label>Horas extra por fuerza mayor: </label>
+                            <input type="number" placeholder="0" min="0" id="horasExtraMayorHoras" class="smallB">
+                            <label>horas a </label>
+                            <input type="number" step="0.01" placeholder="0.00" id="horasExtraMayorDinero">
+                            <label>€/h</label><br>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="values">
+                            <label>Salario en especie: </label>
+                            <input type="number" step="0.01" placeholder="0.00" min="0" id="salarioEspecie">
+                            <label>€</label><br>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="complementos">
+                            <label><b>Complementos salariales</b></label><br>
+                            <ul class="listaComple">
+                                <li>
+                                    <div class="values">
+                                        <label>Plus de </label>
+                                        <input class="complementoAdd" type="text" placeholder="opcional">
+                                        <label>: </label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="salarialUno">
+                                        <label>€</label><br>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="values">
+                                        <label>Plus de </label>
+                                        <input class="complementoAdd" type="text" placeholder="opcional">
+                                        <label>: </label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="salarialDos">
+                                        <label">€</label><br>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="values">
+                                        <label>Plus de </label>
+                                        <input class="complementoAdd" type="text" placeholder="opcional">
+                                        <label>: </label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="salarialTres">
+                                        <label>€</label><br>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="complementos">
+                            <label><b>Percepciones no salariales</b></label><br>
+                            <ul class="listaComple">
+                                <li>
+                                    <div class="values">
+                                        <label>Gastos Locomoción: Importe total</label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="locoTotal">
+                                        <label>€ | Justificado</label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="locoJusti">
+                                        <label>€ | Kilómetros </label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="locoKm"><br>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="values">
+                                        <label>Dietas: Importe total</label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="dietasTotal">
+                                        <label>€ | Gastos de estancia</label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="dietasEstancia">
+                                        <label>€ | Numero de dias</label>
+                                        <input type="number" placeholder="0" min="0" id="dietasDias" class="smallB">
+                                        <label> | Pernocta</label>
+                                        <input type="checkbox" id="dietasPernocta" class="checkB">
+                                        <label> | Extranjero</label>
+                                        <input type="checkbox" id="dietasExtranjero" class="checkB"><br>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="values">
+                                        <label>Otros: Importe total </label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="otroTotal">
+                                        <label>€ | Justificado</label>
+                                        <input type="number" step="0.01" placeholder="0.00" min="0" id="otroJusti">
+                                        <label>€</label>
+                                        <br>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="values">
+                            <label>Paga extra: </label>
+                            <input type="number" step="0.01" placeholder="0.00" min="0" id="valorPagaExtra">
+                            <label>€ | </label>
+                            <label>Pagas extra al año</label>
+                            <input type="number" placeholder="2" min="0" id="numPagaExtra" class="smallB">
+                            <label> | Recibe paga extra</label>
+                            <input type="checkbox" id="recibePagaExtra" class="checkB">
+                            <label> | Paga extra prorrateada</label>
+                            <input type="checkbox" id="pagaPro" class="checkB"><br>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="values">
+                            <label>IRPF: </label>
+                            <input type="number" step="0.01" placeholder="0.00" min="0" id="irpfPorcen">
+                            <label>%</label><br>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="values buttons">
+                    <input type="submit" value="Calcular" id="calcular">
+                    <input type="reset" value="Reiniciar">
+                </div>
+            </form>
+        </div>
+
+        <br>
+
+        <div id="res">
+            <div class="divRes">
+                <p class="formatoVanessa puntoUno">1) Cálculos previos</p>
+                <div class="puntoRes">
+                    <p class="puntoUno">&#8226; Prorrateo Pagas Extra (PPE) → <span class="resultado" id="primerRes"></p>
+                </div>
+            </div>
+
+            <div class="divRes">
+                <p class="formatoVanessa">2) Cálculo salario bruto</p>
+                <div class="puntoRes">
+                    <p class="puntoDos">&#8226; Salario bruto = SB + SE + CS + CNS + PE + HE</p>
+                    <span class="resultado" id="segundoRes"></span>
+                    <span class="resultado" id="brutoRes"></span>                    
+                </div>
+
+            </div>
+
+            <div class="divRes">
+                <p id="puntoTres" class="formatoVanessa">3) BCC (Base Cotización Contingencias)</p>
+                <div class="puntoRes">
+                    <p class="puntoTresUno">&#8226; BCCC (SB + SE + CS + CNS(no Justificado) + PPE)</p>
+                    <span class="resultado" id="tresUnoRes"></span>                    
+                </div>
+
+                <div class="puntoRes">
+                    <p class="puntoTresDos">&#8226; BCCP (BCCC + HE)</p>
+                    <span class="resultado" id="tresDosRes"></span>                    
+                </div>
+
+                <div class="puntoRes">
+                    <p class="puntoTresTres">&#8226; BCHE (HE normales + HE fuerza mayor)</p>
+                    <span class="resultado" id="tresTresRes"></span>                    
+                </div>
+            </div>
+
+            <div class="divRes">
+                <p id="puntoCuatro" class="formatoVanessa">4) Cálculo cuota SS</p>
+
+                    <table>
+                        <tr>
+                            <td></td>
+                            <th>Base</th>
+                            <th>Tipo</th>
+                            <th>Cuota</th>
+                        </tr>
+                        <tr>
+                            <td>CC</td>
+                            <td><span class="resultado" id="baseCC"></span></td>
+                            <td>4,7%</td>
+                            <td><span class="resultado" id="cuotaCC"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Desempleo</td>
+                            <td><span class="resultado" id="baseDes"></span></td>
+                            <td><span id="tipoDes"></span></td>
+                            <td><span class="resultado" id="cuotaDes"></span></td>
+                        </tr>
+                        <tr>
+                            <td>FP</td>
+                            <td><span class="resultado" id="baseFP"></span></td>
+                            <td>0,1%</td>
+                            <td><span class="resultado" id="cuotaFP"></span></td>
+                        </tr>
+                        <tr>
+                            <td>HEn</td>
+                            <td><span class="resultado" id="baseHEn"></span></td>
+                            <td>4,7%</td>
+                            <td><span class="resultado" id="cuotaHEn"></span></td>
+                        </tr>
+                        <tr>
+                            <td>HEfm</td>
+                            <td><span class="resultado" id="baseHEfm"></span></td>
+                            <td>2%</td>
+                            <td><span class="resultado" id="cuotaHEfm"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td></td>
+                            <td></td>
+                            <th><span class="resultado" id="cuotaSsTotal"></span></th>
+                        </tr>
+                    </table>
+
+            </div>
+
+            <div class="divRes">
+                <p id="puntoCinco" class="formatoVanessa">5) Cálculo cuota IRPF</p>
+                <div class="puntoRes">
+                    <p>&#8226; Salario Bruto - (lo que no cotiza) = Base x IRPF %</p>
+                    <span class="resultado" id="cincoUnoRes"></span><br>
+                    <span class="resultado" id="cincoDosRes"></span>
+                    <span class="resultado" id="cincoTresRes"></span>                    
+                </div>
+
+            </div>    
+
+            <div class="divRes">
+                <p id="puntoSeis" class="formatoVanessa">6) Cálculo salario neto</p>
+                <div class="puntoRes">
+                    <p>&#8226; Salario Neto = Salario Bruto - cuota SS - cuota IRPF </p>
+                    <span class="resultado" id="seisUnoRes"></span>
+                    <span class="resultado" id="seisDosRes"></span>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>

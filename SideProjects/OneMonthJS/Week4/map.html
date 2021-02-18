@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Map Method</title>
+
+    <style type="text/css">
+        body {
+            background: #87CEFA;
+        }
+
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    //FOR EACH - loops through data, executes once per array element
+
+        //cities
+        let cities = ['NYC', 'Paris', 'Berlin'];
+        cities.forEach((city) => {
+            console.log(city);
+        });
+
+        //people example
+        let people = [{name:"Chris", location:"NYC"}, {name:"Mattan", location:"NJ"}];
+        people.forEach((person) => {
+           console.log(person.name)
+            if (person.name === "Chris") {
+                document.write("HELLO");
+            }
+        });
+
+
+    //MAP - loops through data, creates a new array
+
+        //numbers
+        let numbers = [1, 4, 9];
+        let doubles = numbers.map((num) => {
+            return num * 2;
+        });
+
+        //people example
+        let morePeople = [{name:"Chris", location:"NYC"}, {name:"Mattan", location:"NJ"}];
+        let names = morePeople.map((person) => {
+            return person.name;
+        })
+</script>
+
+</body>
+</html>

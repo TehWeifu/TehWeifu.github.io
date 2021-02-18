@@ -1,0 +1,90 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #ecf0f1;
+    background-color: grey;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+input {
+    background-color: white;
+    color: black;
+    outline: none;
+    text-align: right;
+    border: none;
+    font-size: 3rem;
+    width: 40vw;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator {
+    padding: 0.25rem;
+    display: inline-block;
+}
+
+table {
+    margin: auto;
+}
+
+button {
+    border: none;
+    background-color: white;
+    width: 10vw;
+    height: 7vh;
+    padding: 0.5rem 0;
+    margin: 0.25vmax;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+a{
+    text-decoration: none;
+    color: #FF7F27;
+    margin-left: 0.25rem;
+    outline: none;
+}
+
+a:hover{
+    text-shadow: 0 0 10px orangered;
+}
+
+.specialButton {
+    background-color: #FF7F27;
+    font-weight: bold;
+    color: white;
+}
+
+hr {
+    max-width: 50vw;
+    border: 1px solid #FF7F27;
+}
+
+.dot {
+    font-size: xx-large;
+    font-weight: bold;
+}

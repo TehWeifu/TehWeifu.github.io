@@ -1,0 +1,167 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+input {
+    width: 90px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    color: cornflowerblue;    
+}
+
+#contenedor {
+    margin: 0 auto;
+}
+
+#header {
+    border-bottom: 4px solid #FF7F27;
+    margin: 20px 0;
+}
+
+#header h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#header h2 {
+    position: relative;
+    right: 10%;
+    bottom: 10px;
+    text-align: right;
+    z-index: 0;
+}
+
+#header h2 a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #FF7F27;
+}
+#header h2 a:visited {
+    text-decoration: none;
+}
+
+
+#res {
+    display: none;
+}
+
+#inputs {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#inputs h2 {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.values {
+    margin: 8px 10px;
+}
+
+.buttons input{
+    border: 2px solid #FF7F27;
+    color:  black;
+    border-radius: 5px;
+}
+.buttons input:active{
+    background-color: lightgray;
+    border: 2px solid #FF7F27;
+    outline: 0;
+}
+.buttons input:focus{
+    outline: 0;
+}
+
+.complementos {
+    margin: auto 10px;
+    margin-bottom: 15px;
+}
+
+#brutoRes,
+#cincoTresRes,
+#cuotaSsTotal {
+    font-weight: bolder;
+    border-bottom: 3px solid cornflowerblue;
+}
+
+#seisDosRes {
+    font-weight: bolder;
+    border: 3px solid cornflowerblue;
+}
+
+.resultado {
+    color: cornflowerblue;
+}
+
+.checkB {
+    width: 20px;
+}
+
+.smallB {
+    width: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+ul > li:before {
+    content: "–";
+    position: absolute;
+    margin-left: -1.1em; 
+  }
+
+.listaComple {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul.listaComple > li::before {
+    content: none;
+    margin: 0;
+}
+
+
+#res {
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 10%;
+}
+
+.divRes {
+    margin: 30px 0;
+}
+
+.puntoRes {
+    margin: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+table {
+    border-spacing: 50px 25px;
+    text-align: center;
+}

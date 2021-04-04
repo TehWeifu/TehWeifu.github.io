@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yahtzee</title>
+    <link href="img/hug.png" rel="icon">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <h1> &#127816; &#128052; &#127874; </h1>
+    </header>
+    <div class="bkgdimg"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="yahtzee.html">Yahtzee</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="playground">
+        <table>
+            <tr>
+                <td>Ones</td>
+                <td class="js-ones-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Twos</td>
+                <td class="js-twos-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Threes</td>
+                <td class="js-threes-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Fours</td>
+                <td class="js-fours-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Fives</td>
+                <td class="js-fives-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Sixes</td>
+                <td class="js-sixes-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Sum</td>
+                <td class="js-sum-value"></td>
+            </tr>
+            <tr>
+                <td>Bonus</td>
+                <td class="js-bonus-value"></td>
+            </tr>
+            <tr>
+                <td>Three of a kind</td>
+                <td class="js-trips-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Four of a kind</td>
+                <td class="js-poker-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Full house</td>
+                <td class="js-full-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Small straight</td>
+                <td class="js-small-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Large straight</td>
+                <td class="js-large-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Chance</td>
+                <td class="js-chance-value js-values"></td>
+            </tr>
+            <tr>
+                <td>Yahtzee!</td>
+                <td class="js-yahtzee-value js-values"></td>
+            </tr>
+            <tr>
+                <td>TOTAL</td>
+                <td class="js-total-value"></td>
+            </tr>
+        </table>
+        <div class="board-wrapper">
+            <div class="playground_header">Round <span class="current-round">1</span> / 13</div>
+            <div class="board"></div>
+            <div class="hand"></div>
+
+
+            <p><a class="button js-roll-button" href="#">Roll dices</a></p>
+            <div class="bar-container">
+                <div class="progress-bar"></div>
+                <div class="first-third"></div>
+                <div class="second-third"></div>
+            </div>
+            <p class="js-end-text"></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="yahtzee/yahtzee.js"></script>
+</body>
+</html>

@@ -21,6 +21,7 @@ function showRecipe(recipe) {
     let list = document.querySelector(".js-ingredients");
     let title = document.querySelector(".js-recipe-title");
     let details = document.querySelector(".js-details");
+    let kcal = document.querySelector(".js-kcal");
     let link_recipe = document.querySelector(".js-link-recipe");
     let people_person = "people";
 
@@ -28,7 +29,8 @@ function showRecipe(recipe) {
 
     img.src = recipe.image;
     title.innerHTML = recipe.label;
-    details.innerHTML = `This recipe takes ${recipe.totalTime} minutes to make and you can feed ${recipe.yield} ${people_person}. It has a total of ${Math.floor(recipe.calories)} kcalories`;
+    details.innerHTML = `This recipe takes ${recipe.totalTime} minutes to make and you can feed ${recipe.yield} ${people_person} with it.`;
+    kcal.innerHTML = `It has a total of ${Math.floor(recipe.calories)} kcalories (${Math.floor(recipe.calories / recipe.yield)} per serving).`
     link_recipe.href = recipe.url;
 
 

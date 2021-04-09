@@ -1,8 +1,10 @@
 class Dice {
-    constructor() {
+    constructor(num) {
         this.value = Math.floor(1 + Math.random() * 6);
         this.locked = false;
         this.img_source = `./yahtzee/resources/img/dice_${this.value}.png`;
+        this.position = num;
+        this.current_rotation = 0;
     }
 
     roll() {
@@ -14,6 +16,15 @@ class Dice {
 
     toggle_lock() {
         this.locked = !this.locked;
+    }
+
+    shake() {
+        if (this.locked === false) {
+            let parent_div = document.querySelector(`.dice-number-${this.position}`);
+            this.current_rotation += 360;
+            parent_div.style.transform = `rotate(${this.current_rotation}deg) scale(1.0)`;
+            parent_div.style.transition = "transform 0.5s"
+        }
     }
 }
 
@@ -165,7 +176,7 @@ function check_short_straight(result_roll) {
             found_straight = true;
         }
     }
-    if (count === 5 && (result_roll[1] === 0 || result_roll[6] === 0)) {
+    if (count === 5 && (result_roll[1] === 0 || result_roll[6] === 0 || result_roll[2] === 0 || result_roll[5] === 0)) {
         found_straight = true;
     }
 
@@ -201,6 +212,7 @@ function resetBoard() {
         board.appendChild(elem);
     })
     roll_sequence();
+    setTimeout(test_shake, 0);
 }
 
 function initialize_game() {
@@ -210,10 +222,12 @@ function initialize_game() {
 
 function initialize_dices() {
     for (let i = 0; i < 5; i++) {
-        let tmp_dice = new Dice();
+        let tmp_dice = new Dice(i);
         let tmp_div = document.createElement('div');
         tmp_div.dice = tmp_dice;
         tmp_div.classList.add('dice');
+        tmp_div.classList.add('dice-hover');
+        tmp_div.classList.add(`dice-number-${i}`);
 
         let tmp_img = document.createElement('img');
         tmp_img.src = tmp_div.dice.img_source;
@@ -230,6 +244,13 @@ function initialize_dices() {
             }
         });
 
+        tmp_div.addEventListener('mouseover', () => {
+            tmp_div.style.transform = `rotate(${tmp_div.dice.current_rotation}deg) scale(1.2)`;
+        });
+
+        tmp_div.addEventListener('mouseleave', () => {
+            tmp_div.style.transform = `rotate(${tmp_div.dice.current_rotation}deg) scale(1.0)`;
+        });
 
         board.appendChild(tmp_div);
         arr_dices.push(tmp_div);
@@ -253,14 +274,14 @@ function roll_sequence() {
                 progress_bar.style.width = "100%";
                 break;
         }
-        arr_dices.forEach((elem) => {
-            elem.dice.roll();
-            elem.querySelector('img').src = elem.dice.img_source;
-        });
-        check_scores();
+        // arr_dices.forEach((elem) => {
+        //     elem.dice.roll();
+        //     elem.querySelector('img').src = elem.dice.img_source;
+        // });
+        setTimeout(test_shake, 0);
+        // check_scores();
     }
 }
-
 
 function initialize_roll_button() {
     roll_button.addEventListener('click', roll_sequence)
@@ -298,6 +319,8 @@ function finish_game() {
     total_result_text.innerHTML = `You got a total of ${total_sum} points. Nice!`;
 }
 
+
+// "Main function starts here"
 let board = document.querySelector('.board');
 let hand = document.querySelector('.hand');
 let roll_button = document.querySelector('.js-roll-button');
@@ -311,7 +334,6 @@ values_cells.forEach((elem) => {
     elem.locked = false;
     elem.style.cursor = 'pointer';
     elem.addEventListener('click', function locks() {
-        console.log('inside listener');
         elem.locked = true;
         elem.style.color = '#c80060';
         elem.style.fontWeight = "700";
@@ -330,7 +352,19 @@ values_cells.forEach((elem) => {
     });
 });
 
-// "Main function starts here"
 
 initialize_game();
 resetBoard();
+
+function test_shake() {
+    for (let i = 0; i < arr_dices.length; i++) {
+        setTimeout(function () {
+            arr_dices[i].dice.shake();
+            arr_dices[i].dice.roll();
+            arr_dices[i].querySelector('img').src = arr_dices[i].dice.img_source;
+
+        }, 200 * i);
+    }
+    setTimeout(check_scores, 1000);
+}
+

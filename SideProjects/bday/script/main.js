@@ -1,4 +1,4 @@
-async function sendApiRequest(){
+async function sendApiRequest() {
     console.log("function called");
     let pie_or_cake = "pie";
     let rnd_num;
@@ -6,7 +6,9 @@ async function sendApiRequest(){
     let APP_ID = "b3ce1dc2";
     let APP_KEY = "1722d03a58253ef29dc6198ed93cf054";
 
-    if (Math.random() < 0.5) {pie_or_cake = "cake";}
+    if (Math.random() < 0.5) {
+        pie_or_cake = "cake";
+    }
     rnd_num = parseInt(Math.floor(Math.random() * 99));
 
     let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${APP_KEY}&q=${pie_or_cake}&from=${rnd_num}&to=${rnd_num + 1}`);
@@ -25,7 +27,9 @@ function showRecipe(recipe) {
     let link_recipe = document.querySelector(".js-link-recipe");
     let people_person = "people";
 
-    if (recipe.yield === 1) {people_person = "person";}
+    if (recipe.yield === 1) {
+        people_person = "person";
+    }
 
     img.src = recipe.image;
     title.innerHTML = recipe.label;
@@ -34,7 +38,7 @@ function showRecipe(recipe) {
     link_recipe.href = recipe.url;
 
 
-
+    list.innerHTML = "";
     for (const ingredientLine of recipe.ingredientLines) {
         let point = document.createElement("li");
         point.innerHTML = ingredientLine;
@@ -46,5 +50,7 @@ sendApiRequest();
 
 let refresh_button = document.querySelector(".js-refresh-button");
 console.log(refresh_button);
-refresh_button.addEventListener('click', () => {sendApiRequest();});
+refresh_button.addEventListener('click', () => {
+    sendApiRequest();
+});
 

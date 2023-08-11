@@ -2,9 +2,11 @@
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     font-family: 'Merienda', cursive;
     font-weight: 400;
@@ -12,6 +14,10 @@ body {
     background-image: url(../img/bck_clouds.png);
     margin: 0;
     padding: 0;
+}
+
+main p {
+    text-align: justify;
 }
 
 .gallery ul li {
@@ -34,6 +40,7 @@ h1, h2, h3 {
     color: #C80060;
     margin-top: 0;
 }
+
 h1 {
     size: 200px;
 }
@@ -53,19 +60,23 @@ h1 {
 .wrapper {
     margin: 0 auto;
 }
+
 article img {
     border-radius: 10px;
     width: 100%;
     max-width: 250px;
 }
+
 img.responsive {
     width: 100%;
     max-width: 250px;
 }
+
 .bkgdimg {
     height: 12px;
-    background: url(../img/bck_mountains.png) repeat-x ;
+    background: url(../img/bck_mountains.png) repeat-x;
 }
+
 nav ul {
     list-style-type: none;
     background-color: #e6bf98;
@@ -74,6 +85,7 @@ nav ul {
     border-bottom: 3px solid #cc8850;
     overflow: auto;
 }
+
 /* splits nav into 2 columns
 http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
 nav li:nth-child(even) {
@@ -81,20 +93,24 @@ nav li:nth-child(even) {
     float: right;
     padding: 0.5em;
 }
+
 nav li:nth-child(odd) {
     width: 50%;
     float: left;
     padding: 0.5em;
 }
+
 nav a {
     color: #c80060;
     text-decoration: none;
     display: block;
-    padding-left:3.333333%;
+    padding-left: 3.333333%;
 }
+
 nav a:hover {
-    color:#00c4c7;
+    color: #00c4c7;
 }
+
 /* add gallery class */
 .content,
 .gallery,
@@ -104,6 +120,7 @@ nav a:hover {
     border-bottom-right-radius: 10px;
     padding: 2em;
 }
+
 .gallery ul {
     margin: 0;
     padding: 0;
@@ -111,6 +128,7 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
 }
+
 .last-pic {
     margin: 0 auto;
 }
@@ -118,9 +136,11 @@ nav a:hover {
 .gallery li {
     flex: auto;
 }
+
 figcaption {
     color: #c80060;
 }
+
 .gallery img {
     width: 100%;
     border-radius: 10px;
@@ -130,15 +150,18 @@ figcaption {
     float: left;
     margin: 0 1em 1em 0;
 }
+
 .floatright {
     float: right;
     margin: 0 0 1em 1em;
 }
+
 [class*='sidebar'] {
     border: 1px solid #00c4c7;
     border-radius: 10px;
     margin: 3em 0;
 }
+
 [class*='sidebar'] h3 {
     margin: 0;
     color: white;
@@ -147,15 +170,18 @@ figcaption {
     border-top-right-radius: 10px;
     padding-left: 0.5em;
 }
+
 [class*='sidebar'] img {
     border-radius: 0 0 10px 10px;
     width: 100%;
     max-width: 270px;
     display: block; /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
 }
+
 .sidebar-secondary {
     border-color: #c80060;
 }
+
 .sidebar-secondary h3 {
     background-color: #c80060;
 }
@@ -164,7 +190,7 @@ article p {
     text-align: center;
 }
 
-.js-details, .js-kcal{
+.js-details, .js-kcal {
     text-align: left;
 }
 
@@ -177,32 +203,39 @@ blockquote {
     margin: 0;
     text-align: justify;
 }
+
 blockquote p,
 blockquote cite {
     padding: 0 1em;
 }
+
 blockquote cite {
     text-transform: uppercase;
     font-style: normal;
     padding-bottom: 1em;
     display: block;
 }
+
 footer {
     background-color: #00CDD1;
     color: white;
     clear: both;
     margin: 0 0.5em 3em 0.5em;
 }
+
 footer p {
     text-align: center;
 }
+
 footer img {
     width: 52px;
 }
+
 footer a {
     color: white;
     text-decoration: none;
 }
+
 /* form styling */
 fieldset {
     border: none;
@@ -210,12 +243,15 @@ fieldset {
     margin: 0;
     display: block;
 }
+
 fieldset.pie {
     margin-top: 2em;
 }
+
 fieldset.contact {
     margin-bottom: 1em;
 }
+
 legend {
     padding: 0;
     margin: 0;
@@ -223,37 +259,45 @@ legend {
     color: #c80060;
     font-size: 1.2em;
 }
+
 label {
     display: block;
 }
+
 .contact label {
     margin-top: 1em;
     font-weight: bold;
 }
+
 .labeltext {
     font-weight: bold;
     margin-top: 1em;
     display: block;
 }
+
 select + label {
     display: inline;
     font-style: italic;
     font-size: 0.8em;
     padding-left: 2em;
 }
+
 input {
     width: 20em;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
     width: 1.5em;
 }
+
 textarea {
     display: block;
     width: 25em;
     height: 15em;
     margin-bottom: 1em;
 }
+
 button, .button {
     margin-bottom: 2em;
     background-color: #c80060;
@@ -264,9 +308,11 @@ button, .button {
     font-family: 'Niconne', cursive;
     padding: 0.2em 0.5em;
 }
+
 button:hover, .button:hover {
     background-color: #AD0054;
 }
+
 /*Yahtzee section*/
 
 .css_lighter {
@@ -309,7 +355,7 @@ table {
 }
 
 
-table td{
+table td {
     border: 1px solid #c80060;
     background-color: #e6bf98;
     border-radius: 5px;
@@ -321,6 +367,7 @@ table td{
     width: 70px;
     text-align: center;
 }
+
 .bar-container {
     position: relative;
     width: 150px;
@@ -329,6 +376,7 @@ table td{
     border: 2px solid #cc8850;
     background-color: #e6bf98;
 }
+
 .first-third {
     position: absolute;
     width: 33%;
@@ -387,29 +435,35 @@ table td{
         float: none;
         padding: 0;
     }
+
     nav a {
         padding: 0 1em;
 
     }
+
     .heading {
         background: url(../img/vlc.JPG) no-repeat;
         height: 130px;
     }
+
     .content,
     .home {
         display: grid;
         grid-gap: 1em;
     }
+
     .aside {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: 1fr 1fr;
     }
+
     .homeboxes {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: repeat(2, 1fr);
     }
+
     .menu {
         display: grid;
         grid-gap: 1em;
@@ -417,7 +471,6 @@ table td{
     }
 
     /*Yahtzee section*/
-
     .board-wrapper {
         border: none;
         border-radius: 0;
@@ -477,52 +530,57 @@ table td{
         width: 115px;
     }
 
-    .board .dice-number-0{
+    .board .dice-number-0 {
         position: absolute;
         left: 50px;
         top: 25px;
     }
 
-    .board .dice-number-3{
+    .board .dice-number-3 {
         position: absolute;
         left: 170px;
         top: 200px;
     }
 
-    .board .dice-number-1{
+    .board .dice-number-1 {
         position: absolute;
         left: 280px;
         top: 25px;
     }
 
-    .board .dice-number-4{
+    .board .dice-number-4 {
         position: absolute;
         left: 400px;
         top: 200px;
     }
-    .board .dice-number-2{
+
+    .board .dice-number-2 {
         position: absolute;
         left: 510px;
         top: 25px;
     }
 
 
-/* Large devices (large desktops, 1200px and up) */
+    /* Large devices (large desktops, 1200px and up) */
     .wrapper {
         width: 97%;
         max-width: 1150px;
         float: none;
     }
+
     h2 {
         font-size: 3em;
         border-bottom: 2px dotted #c80060;
     }
+
     h3 {
         font-size: 2em;
     }
+
     div.row {
         padding: 0;
     }
+
     nav li,
     nav li:nth-child(even),
     nav li:nth-child(odd) {
@@ -530,18 +588,22 @@ table td{
         width: auto;
         padding: 0;
     }
+
     .content {
         grid-template-columns: 3fr 1fr;
         grid-gap: 3em;
     }
+
     .homeboxes {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: repeat(4, 1fr);
     }
+
     .aside {
         display: block;
     }
+
     .heading {
         background: url(../img/vlc.JPG) no-repeat;
         height: 183px;
